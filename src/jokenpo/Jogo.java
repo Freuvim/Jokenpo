@@ -1,8 +1,6 @@
 package jokenpo;
 
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Jogo {
     
@@ -28,6 +26,7 @@ public class Jogo {
     }
     
     public boolean Jogar(){
+        
             this.tabela();
             if(vez()==1){
                 jogador1.jogar();
@@ -51,7 +50,7 @@ public class Jogo {
         String formatJogadores = "| %-10s | %-8d | %-8d | %n";
             String formatRodada = "| %-10s | %-19d | %n";
             String formatVez = "| %-10s | %-19s | %n";
-            System.out.format("+------------+----------+----------+%n");
+            System.out.format("%n+------------+----------+----------+%n");
             System.out.format("| Jogadores  | Vitorias | Derrotas |%n");
             System.out.format("+------------+----------+----------+%n");
             System.out.format(formatJogadores, "Player 1",
@@ -64,6 +63,7 @@ public class Jogo {
             System.out.format(formatRodada, "Rodada", rodada);
             System.out.format("+------------+----------+----------+%n");
             System.out.format(formatVez, "Vez: ", "jogador " + vez);
-            System.out.format("+------------+----------+----------+%n"); 
+            System.out.format("+------------+----------+----------+%n%n"); 
     }
+  
 }
