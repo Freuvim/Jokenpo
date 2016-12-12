@@ -31,7 +31,7 @@ public class Jogo {
                 jogador1.jogar();
             } else {
                 jogador2.jogar();
-                juiz.verifica(this.jogador1.getEscolha(), this.jogador2.getEscolha());
+                juiz.imprimeResultado(this.jogador1.getEscolha(), this.jogador2.getEscolha());
                 rodada++;
             }
             vez++;

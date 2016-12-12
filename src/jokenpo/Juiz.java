@@ -12,24 +12,25 @@ package jokenpo;
 public class Juiz {
     
     
-    public Boolean verifica(Elemento e1, Elemento e2){
+    public String verifica(Elemento e1, Elemento e2){
         if (e1.equals(e2)){
-            System.out.println("Empate!");
-            return true;
-        }
+            return "Empate!!!";
+        } else {
         if ((e1.getTipo() == 1) && (e2.getTipo() == 3)){
-            System.out.println("Jogador 1 é o Vencedor!!!");
-            return true;
+            return "Jogador 1 é o Vencedor!!!";
         }
         if ((e1.getTipo() == 2) && (e2.getTipo() == 1)){
-            System.out.println("Jogador 1 é o Vencedor!!!");
-            return true;
+            return "Jogador 1 é o Vencedor!!!";
         }
         if ((e1.getTipo() == 3) && (e2.getTipo() == 2)){
-            System.out.println("Jogador 1 é o Vencedor!!!");
-            return true;
+            return "Jogador 1 é o Vencedor!!!";
         }
-        System.out.println("Jogador 2 é o Vencedor!!!");
-        return false;
+            return "Jogador 2 é o Vencedor!!!";
+        }
+    }
+    
+    public void imprimeResultado(Elemento e1, Elemento e2){
+        String resultado = this.verifica(e1, e2);
+        System.out.println("O Resultado da partida eh: " + resultado);
     }
 }
