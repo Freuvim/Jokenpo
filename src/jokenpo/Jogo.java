@@ -1,6 +1,8 @@
 package jokenpo;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Jogo {
     
@@ -23,7 +25,7 @@ public class Jogo {
     
     public boolean Jogar(){
             System.out.println("----------------------");
-            System.out.println("\nRodada "+rodada);
+            System.out.println("Rodada: " + rodada);
             System.out.println("É a vez do jogador " + vez() );            
             if(vez()==1){
                 jogador1.jogar();
