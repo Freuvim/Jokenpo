@@ -25,7 +25,12 @@ public class Jogador {
             System.out.println("3) Tesoura");
             System.out.println("4) Parar de Jogar");
             System.out.print("Opção: ");
-            opcao = entrada.nextInt();
+            if (entrada.hasNextInt()){
+                opcao = entrada.nextInt();
+            } else{
+                entrada.next();
+                opcao = 5;
+            }
             if(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4)
                 System.out.println("Opção inválida! Tente novamente");
             if(opcao == 4){
