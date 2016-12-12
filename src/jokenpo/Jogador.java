@@ -8,7 +8,6 @@ package jokenpo;
 import java.util.Scanner;
 
 public class Jogador {
-   private int vez;
    public Scanner entrada = new Scanner(System.in);
    private Elemento escolha = new Elemento();
    private int vitorias;
@@ -35,21 +34,7 @@ public class Jogador {
         } while(opcao != 1 && opcao != 2 && opcao != 3);
         return opcao;
     }
-
-    /**
-     * @return the vez
-     */
-    public int getVez() {
-        return vez;
-    }
-
-    /**
-     * @param vez the vez to set
-     */
-    public void setVez(int vez) {
-        this.vez = vez;
-    }
-
+   
     /**
      * @return the escolha
      */
