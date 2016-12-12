@@ -26,7 +26,6 @@ public class Jogo {
     }
     
     public boolean Jogar(){
-        
             this.tabela();
             if(vez()==1){
                 jogador1.jogar();
@@ -62,7 +61,7 @@ public class Jogo {
             System.out.format("+------------+----------+----------+%n");
             System.out.format(formatRodada, "Rodada", rodada);
             System.out.format("+------------+----------+----------+%n");
-            System.out.format(formatVez, "Vez: ", "jogador " + vez);
+            System.out.format(formatVez, "Vez: ", "Jogador " + vez);
             System.out.format("+------------+----------+----------+%n%n"); 
     }
   

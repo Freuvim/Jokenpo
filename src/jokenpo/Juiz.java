@@ -11,7 +11,6 @@ package jokenpo;
  */
 public class Juiz {
     
-    
     public String verifica(Jogador j1, Jogador j2){
         Elemento e1 = j1.getEscolha();
         Elemento e2 = j2.getEscolha();
@@ -41,6 +40,7 @@ public class Juiz {
     
     public void imprimeResultado(Jogador j1, Jogador j2){
         String resultado = this.verifica(j1, j2);
+        System.out.println("");
         System.out.println("O Resultado da partida eh: " + resultado);
     }
 }
