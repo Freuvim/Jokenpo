@@ -6,7 +6,7 @@ package jokenpo;
  */
 public class Juiz {
     
-    public String verifica(Jogador j1, Jogador j2){
+    public String calculaResultado(Jogador j1, Jogador j2){
         if (j1.getEscolha().equals(j2.getEscolha())){
             return "Empate!!!";
         } else {
@@ -32,7 +32,7 @@ public class Juiz {
     }
     
     public void imprimeResultado(Jogador j1, Jogador j2){
-        String resultado = this.verifica(j1, j2);
+        String resultado = this.calculaResultado(j1, j2);
         System.out.println("O Resultado da partida é: " + resultado);
     }
 }
