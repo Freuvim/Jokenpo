@@ -19,6 +19,9 @@ public class Jogador {
            case 3:
                this.setEscolha(Elementos.TESOURA);
                break;
+           case 4:
+                System.exit(0);
+                break;
        }
    }
    
@@ -38,10 +41,7 @@ public class Jogador {
             }
             if(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4)
                 System.out.println("Opção inválida! Tente novamente");
-            if(opcao == 4){
-                System.exit(0);
-            }
-        } while(opcao != 1 && opcao != 2 && opcao != 3);
+        } while(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4);
         return opcao;
     }
    
