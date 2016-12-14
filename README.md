@@ -21,4 +21,4 @@ Baixe o [projeto](https://github.com/Freuvim/Jokenpo/archive/master.zip) do NetB
 * [Elementos](https://raw.githubusercontent.com/Freuvim/Jokenpo/master/src/jokenpo/Elementos.java).
 
 ## Autor
-* **Kélvin Tesche Ievenes** - [Freuvim](https://github.com/PurpleBooth)
+* **Kélvin Tesche Ievenes** - [Freuvim](https://github.com/Freuvim)
