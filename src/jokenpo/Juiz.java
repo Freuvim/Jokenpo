@@ -12,22 +12,20 @@ package jokenpo;
 public class Juiz {
     
     public String verifica(Jogador j1, Jogador j2){
-        Elemento e1 = j1.getEscolha();
-        Elemento e2 = j2.getEscolha();
-        if (e1.equals(e2)){
+        if (j1.getEscolha().equals(j2.getEscolha())){
             return "Empate!!!";
         } else {
-            if ((e1.getTipo() == 1) && (e2.getTipo() == 3)){
+            if ((j1.getEscolha().equals(Elementos.PEDRA)) && (j2.getEscolha().equals(Elementos.TESOURA))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";
             }
-            if ((e1.getTipo() == 2) && (e2.getTipo() == 1)){
+            if ((j1.getEscolha().equals(Elementos.PAPEL)) && (j2.getEscolha().equals(Elementos.PEDRA))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";
             }
-            if ((e1.getTipo() == 3) && (e2.getTipo() == 2)){
+            if ((j1.getEscolha().equals(Elementos.TESOURA)) && (j2.getEscolha().equals(Elementos.PAPEL))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";
@@ -40,7 +38,6 @@ public class Juiz {
     
     public void imprimeResultado(Jogador j1, Jogador j2){
         String resultado = this.verifica(j1, j2);
-        System.out.println("");
-        System.out.println("O Resultado da partida eh: " + resultado);
+        System.out.println("O Resultado da partida é: " + resultado);
     }
 }

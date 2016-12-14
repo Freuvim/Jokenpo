@@ -11,11 +11,11 @@ public class Jogo {
     public Scanner entrada = new Scanner(System.in);
     
     public Jogo(){
-        iniciar();
+        inicializarEntidades();
         while(Jogar());
     }
     
-    public void iniciar(){
+    public void inicializarEntidades(){
         jogador1 = new Jogador();
         jogador1.setVitorias(0);
         jogador1.setDerrotas(0);
@@ -47,22 +47,22 @@ public class Jogo {
     
     private void tabela(){
         String formatJogadores = "| %-10s | %-8d | %-8d | %n";
-            String formatRodada = "| %-10s | %-19d | %n";
-            String formatVez = "| %-10s | %-19s | %n";
-            System.out.format("%n+------------+----------+----------+%n");
-            System.out.format("| Jogadores  | Vitorias | Derrotas |%n");
-            System.out.format("+------------+----------+----------+%n");
-            System.out.format(formatJogadores, "Player 1",
-                    this.jogador1.getVitorias(),
-                    this.jogador1.getDerrotas());  
-            System.out.format(formatJogadores, "Player 2",
-                    this.jogador2.getVitorias(),
-                    this.jogador2.getDerrotas()); 
-            System.out.format("+------------+----------+----------+%n");
-            System.out.format(formatRodada, "Rodada", rodada);
-            System.out.format("+------------+----------+----------+%n");
-            System.out.format(formatVez, "Vez: ", "Jogador " + vez);
-            System.out.format("+------------+----------+----------+%n%n"); 
+        String formatRodada = "| %-10s | %-19d | %n";
+        String formatVez = "| %-10s | %-19s | %n";
+        System.out.format("%n+------------+----------+----------+%n");
+        System.out.format("| Jogadores  | Vitorias | Derrotas |%n");
+        System.out.format("+------------+----------+----------+%n");
+        System.out.format(formatJogadores, "Jogador 1",
+                this.jogador1.getVitorias(),
+                this.jogador1.getDerrotas());  
+        System.out.format(formatJogadores, "Jogador 2",
+                this.jogador2.getVitorias(),
+                this.jogador2.getDerrotas()); 
+        System.out.format("+------------+----------+----------+%n");
+        System.out.format(formatRodada, "Rodada", rodada);
+        System.out.format("+------------+----------+----------+%n");
+        System.out.format(formatVez, "Vez ", "Jogador " + vez);
+        System.out.format("+------------+----------+----------+%n%n"); 
     }
   
 }

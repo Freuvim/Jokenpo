@@ -9,12 +9,22 @@ import java.util.Scanner;
 
 public class Jogador {
    public Scanner entrada = new Scanner(System.in);
-   private Elemento escolha = new Elemento();
+   private Elementos escolha;
    private int vitorias;
    private int derrotas;
    
    public void jogar(){
-      this.getEscolha().setTipo(this.escolherElemento());
+       switch(this.escolherElemento()){
+           case 1:
+               this.setEscolha(Elementos.PEDRA);
+               break;
+           case 2:
+               this.setEscolha(Elementos.PAPEL);
+               break;
+           case 3:
+               this.setEscolha(Elementos.TESOURA);
+               break;
+       }
    }
    
    public int escolherElemento(){
@@ -43,14 +53,14 @@ public class Jogador {
     /**
      * @return the escolha
      */
-    public Elemento getEscolha() {
+    public Elementos getEscolha() {
         return escolha;
     }
 
     /**
      * @param escolha the escolha to set
      */
-    public void setEscolha(Elemento escolha) {
+    public void setEscolha(Elementos escolha) {
         this.escolha = escolha;
     }
 
