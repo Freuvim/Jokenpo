@@ -7,20 +7,20 @@ package jokenpo;
 public class Juiz {
     
     public String calculaResultado(Jogador j1, Jogador j2){
-        if (j1.getEscolha().equals(j2.getEscolha())){
+        if (j1.getJogada().equals(j2.getJogada())){
             return "Empate!!!";
         } else {
-            if ((j1.getEscolha().equals(Elementos.PEDRA)) && (j2.getEscolha().equals(Elementos.TESOURA))){
+            if ((j1.getJogada().equals(Elementos.PEDRA)) && (j2.getJogada().equals(Elementos.TESOURA))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";
             }
-            if ((j1.getEscolha().equals(Elementos.PAPEL)) && (j2.getEscolha().equals(Elementos.PEDRA))){
+            if ((j1.getJogada().equals(Elementos.PAPEL)) && (j2.getJogada().equals(Elementos.PEDRA))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";
             }
-            if ((j1.getEscolha().equals(Elementos.TESOURA)) && (j2.getEscolha().equals(Elementos.PAPEL))){
+            if ((j1.getJogada().equals(Elementos.TESOURA)) && (j2.getJogada().equals(Elementos.PAPEL))){
                 j1.setVitorias(j1.getVitorias()+1);
                 j2.setDerrotas(j2.getDerrotas()+1);
                 return "Jogador 1 é o Vencedor!!!";

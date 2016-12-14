@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Jogador {
    public Scanner entrada = new Scanner(System.in);
-   private Elementos escolha;
+   private Elementos jogada;
    private int vitorias;
    private int derrotas;
    
    public void jogar(){
        switch(this.escolherElemento()){
            case 1:
-               this.setEscolha(Elementos.PEDRA);
+               this.setJogada(Elementos.PEDRA);
                break;
            case 2:
-               this.setEscolha(Elementos.PAPEL);
+               this.setJogada(Elementos.PAPEL);
                break;
            case 3:
-               this.setEscolha(Elementos.TESOURA);
+               this.setJogada(Elementos.TESOURA);
                break;
            case 4:
                 System.exit(0);
@@ -46,17 +46,17 @@ public class Jogador {
     }
    
     /**
-     * @return the escolha
+     * @return the jogada
      */
-    public Elementos getEscolha() {
-        return escolha;
+    public Elementos getJogada() {
+        return jogada;
     }
 
     /**
-     * @param escolha the escolha to set
+     * @param jogada the jogada to set
      */
-    public void setEscolha(Elementos escolha) {
-        this.escolha = escolha;
+    public void setJogada(Elementos jogada) {
+        this.jogada = jogada;
     }
 
     /**
