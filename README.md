@@ -2,10 +2,11 @@
 Jogo Jokenpo feito em Java com OO
 
 ## Requisitos:
-Utilizei o Netbeans com Java SE, ambos podem ser baixados nesse [link](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+* [NetBeans](https://netbeans.org/downloads/index.html)
+* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ## Download:
-[Baixe o projeto do Netbeans](https://github.com/Freuvim/Jokenpo/archive/master.zip) ou as [classes](https://github.com/Freuvim/Jokenpo/tree/master/src/jokenpo) separadamente.
+Baixe o [projeto](https://github.com/Freuvim/Jokenpo/archive/master.zip) do NetBeans ou as [classes](https://github.com/Freuvim/Jokenpo/tree/master/src/jokenpo) separadamente.
 
 ### Classes:
 * [Principal](https://raw.githubusercontent.com/Freuvim/Jokenpo/master/src/jokenpo/principal.java);
