@@ -1,9 +1,5 @@
 package jokenpo;
 
-/**
- *
- * @author Fréuvim
- */
 public class Juiz {
     
     public String calculaResultado(Jogador j1, Jogador j2){

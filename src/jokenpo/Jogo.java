@@ -64,5 +64,4 @@ public class Jogo {
         System.out.format(formatVez, "Vez ", "Jogador " + vez);
         System.out.format("+------------+----------+----------+%n%n"); 
     }
-  
 }
