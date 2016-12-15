@@ -4,11 +4,10 @@ Jogo Jokenpo feito em Java com OO
 ## Getting Started
 Baixe o NetBeans com Java JDK. Caso queira utilizar outra IDE apenas baixe o Java JDK (se não estiver disponível na sua máquina),
 e baixe as classes disponíveis abaixo em *Downloads*.
-
 Com o NetBeans é só baixar o projeto e abri-lo na IDE.
 
 ### Requisitos
-* [NetBeans](https://netbeans.org/downloads/index.html)
+* [NetBeans + Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html)
 * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ### Downloads
