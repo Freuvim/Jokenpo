@@ -2,7 +2,7 @@
 Jogo Jokenpo feito em Java com OO
 
 ## Tutorial
-Baixe o NetBeans com Java JDK que estão disponíveis abaixo em *Requisitos*.
+Baixe o NetBeans com Java JDK que estão disponíveis abaixo em *Requisitos*.                                                       
 Com o NetBeans instalado é só baixar o projeto e abri-lo na IDE.
 
 ### Requisitos
